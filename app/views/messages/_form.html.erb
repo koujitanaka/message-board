@@ -12,27 +12,27 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-        <%= f.label "名前", :class => "col-sm-1 control-label" %>
+ 　　　 <div class="form-group1">
+        <%= f.label "Name", :class => "col-sm-1 control-label" %>
         <div class="col-sm-3">
           <%= f.text_field :name, :class => "form-control" %>
         </div>
       </div>
 
-      <div class="form-group">
-        <%= f.label "年齢", :class => "col-sm-1 control-label" %>
+      <div class="form-group2">
+        <%= f.label "Age", :class => "col-sm-1 control-label" %>
         <div class="col-sm-3">
           <%= f.number_field :age, :class => "form-control", min: Message::AGE_GE, max: Message::AGE_LE %>
         </div>
       </div>
-      
-      <div class="form-group">
-        <%= f.label "本文", :class => "col-sm-1 control-label" %>
+      <br>
+      <div class="form-group3">
+        <%= f.label "Message", :class => "col-sm-1 control-label" %>
         <div class="col-sm-7">
           <%= f.text_area :body, :class => "form-control" %>
         </div>
       </div>
-      
+      <br>
       <div class="col-sm-2">
         <%= f.submit '送信', class: "btn btn-sm btn-primary btn-block" %>
       </div>
