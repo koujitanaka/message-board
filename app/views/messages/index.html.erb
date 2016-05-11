@@ -14,9 +14,10 @@
 
 <%= form_for(@message) do |f| %>
   名前:
-  <%= f.text_field :name %>
-
+  <%= f.text_field :name, :size=>"60" %>
+  <br>
   内容:
-  <%= f.text_field :body %>
-  <%= f.submit %>
+  <%= f.text_area :body,  :size=>"60x10" %>
+  <br>
+  <button type="button" class="btn btn-primary">Create Message</button>
 <% end %>
